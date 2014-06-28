@@ -1,7 +1,7 @@
 modules to use:
 
 ```
-xml2js
+xml-json
 tar-fs
 json
 binary-csv
