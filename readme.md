@@ -1,5 +1,6 @@
 modules to use:
 
+```
 xml2js
 tar-fs
 json
@@ -9,6 +10,7 @@ csv-join
 trim-object-stream
 json-merge
 ldjson-stream
-curl https://registry.npmjs.org/browserify | json-select "versions.*.{pizza}"
+JSONStream
+```
 
-implement line delimited json streaming thing
+1. implement line delimited json streaming thing
