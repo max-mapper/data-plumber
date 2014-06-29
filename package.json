@@ -7,5 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "BSD"
+  "license": "BSD",
+  "devDependencies": {
+    "JSONStream": "*",
+    "binary-csv": "*",
+    "csv-join": "*",
+    "gasket": "*",
+    "j": "*",
+    "json": "*",
+    "json-merge": "*",
+    "ldjson-stream": "*",
+    "shapefile": "*",
+    "tar-fs": "*",
+    "trim-object-stream": "*",
+    "xml-json": "*"
+  }
 }
