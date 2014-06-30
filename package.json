@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
+  "bin": "cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,5 +22,10 @@
     "tar-fs": "*",
     "trim-object-stream": "*",
     "xml-json": "*"
+  },
+  "dependencies": {
+    "gasket": "^0.3.0",
+    "workshopper": "^1.2.1",
+    "workshopper-exercise": "maxogden/workshopper-exercise#execute-args"
   }
 }
