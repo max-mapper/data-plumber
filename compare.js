@@ -4,7 +4,6 @@ var child = require('child_process')
 var tuple = require('tuple-stream')
 var through = require('through')
 var styled = require('styled')
-var stdout = require('stdout')
 
 module.exports = function(cmd1, cmd1args, cmd2, cmd2args, cb) {
   var a = child.spawn(cmd1, cmd1args, {env: process.env})
