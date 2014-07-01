@@ -1,33 +1,28 @@
-# Gasket
+# Line Delimited JSON
 
-This workshop teaches you how to use **command line modules** to process data.
+Line Delimited JSON (abbreviated as LDJSON or sometimes NDJSON for "Line"
+or "Newline") is simply a plain text format where you have one piece of
+JSON encoded data per line, e.g.:
 
-The first module you will use is called gasket. You can install it like this:
+{"foo": "bar"}
+{"foo": "bar"}
+{"foo": "bar"}
 
-```
-npm install gasket -g
-```
+The **jku** command line module is really handy for processing LDJSON data.
 
-The **-g** puts a **gasket** command in your command-line path. If you get any
-errors during installation try again with **sudo** or ask for help.
+Read about how it works at: npmjs.org/jku
 
-Gasket simply runs commands for you, similar to Grunt, Gulp or Bash. You put
-gasket commands in a **package.json** file under the **"gasket"** key, e.g.:
+To install it run **npm install --save jku**. This will add jku to your
+package.json's dependencies field. **Note**: you don't have to use **-g**
+anymore. gasket is smart enough to find commands inside the node_modules
+directory.
 
-```
-{
-  "name": "my-module",
-  "version": "0.0.1",
-  "gasket": [
-    "echo hi"
-  ]
-}
-```
-
-If you run **gasket** in the same folder as the above **package.json** file it
-should simply print out **hi** to the console.
-
-**To pass this challenge** create a **package.json** file with a **"gasket"**
-section that prints out **hello world** to the console.
+**Hint**: use the 'transform' option of jku for this challenge
 
 Use the command **data-plumber verify package.json** to verify.
+
+**To pass this challenge** create a **package.json** file with a **"gasket"**
+section that prints out the **value** of the **"name"** of each JSON object
+using the **jku** module. It should print one name per line.
+
+Data will be piped into your gasket process for this challenge.

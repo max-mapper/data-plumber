@@ -11,9 +11,5 @@ exports.verify = function (args, cb) {
   var cmd1Args = ['--config', path.resolve(args[0])]
   var cmd2 = gasketCmd
   var cmd2Args = ['--config', path.resolve(__dirname, 'package.json')]
-  var cmds = compare(cmd1, cmd1Args, cmd2, cmd2Args, cb)
-  
-  var input = fs.createReadStream(path.resolve(__dirname, '..', '..', 'data', 'states.json'))
-  input.pipe(cmds.a.stdin)
-  input.pipe(cmds.b.stdin)
+  compare(cmd1, cmd1Args, cmd2, cmd2Args, cb)
 }

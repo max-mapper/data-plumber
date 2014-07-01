@@ -1,6 +1,6 @@
 {
   "name": "data-plumber",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "a nodeschool workshop for learning how to work with data",
   "main": "index.js",
   "bin": {
@@ -13,7 +13,7 @@
     "adventure": "^2.4.0",
     "ansimd": "0.0.1",
     "diff": "^1.0.8",
-    "gasket": "^0.4.0",
+    "gasket": "^0.5.0",
     "split": "^0.3.0",
     "styled": "0.0.1",
     "through": "^2.3.4",

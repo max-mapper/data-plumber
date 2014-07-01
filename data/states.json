@@ -1,0 +1,51 @@
+{"name":"Alabama","expenditure":"275","income":"6247"}
+{"name":"Alaska","expenditure":"821","income":"10851"}
+{"name":"Arizona","expenditure":"339","income":"7374"}
+{"name":"Arkansas","expenditure":"275","income":"6183"}
+{"name":"California","expenditure":"387","income":"8850"}
+{"name":"Colorado","expenditure":"452","income":"8001"}
+{"name":"Connecticut","expenditure":"531","income":"8914"}
+{"name":"Delaware","expenditure":"424","income":"8604"}
+{"name":"Florida","expenditure":"316","income":"7505"}
+{"name":"Georgia","expenditure":"265","income":"6700"}
+{"name":"Hawaii","expenditure":"403","income":"8380"}
+{"name":"Idaho","expenditure":"304","income":"6813"}
+{"name":"Illinois","expenditure":"437","income":"8745"}
+{"name":"Indiana","expenditure":"345","income":"7696"}
+{"name":"Iowa","expenditure":"431","income":"7873"}
+{"name":"Kansas","expenditure":"355","income":"8001"}
+{"name":"Kentucky","expenditure":"260","income":"6615"}
+{"name":"Louisiana","expenditure":"316","income":"6640"}
+{"name":"Maine","expenditure":"327","income":"6333"}
+{"name":"Maryland","expenditure":"427","income":"8306"}
+{"name":"Massachusetts","expenditure":"427","income":"8063"}
+{"name":"Michigan","expenditure":"466","income":"8442"}
+{"name":"Minnesota","expenditure":"477","income":"7847"}
+{"name":"Mississippi","expenditure":"259","income":"5736"}
+{"name":"Missouri","expenditure":"274","income":"7342"}
+{"name":"Montana","expenditure":"433","income":"7051"}
+{"name":"Nebraska","expenditure":"294","income":"7391"}
+{"name":"Nevada","expenditure":"359","income":"9032"}
+{"name":"New Hampshire","expenditure":"279","income":"7277"}
+{"name":"New Jersey","expenditure":"423","income":"8818"}
+{"name":"New Mexico","expenditure":"388","income":"6505"}
+{"name":"New York","expenditure":"447","income":"8267"}
+{"name":"North Carolina","expenditure":"335","income":"6607"}
+{"name":"North Dakota","expenditure":"311","income":"7478"}
+{"name":"Ohio","expenditure":"322","income":"7812"}
+{"name":"Oklahoma","expenditure":"320","income":"6951"}
+{"name":"Oregon","expenditure":"397","income":"7839"}
+{"name":"Pennsylvania","expenditure":"412","income":"7733"}
+{"name":"Rhode Island","expenditure":"342","income":"7526"}
+{"name":"South Carolina","expenditure":"315","income":"6242"}
+{"name":"South Dakota","expenditure":"321","income":"6841"}
+{"name":"Tennessee","expenditure":"268","income":"6489"}
+{"name":"Texas","expenditure":"315","income":"7697"}
+{"name":"Utah","expenditure":"417","income":"6622"}
+{"name":"Vermont","expenditure":"353","income":"6541"}
+{"name":"Virginia","expenditure":"356","income":"7624"}
+{"name":"Washington","expenditure":"415","income":"8450"}
+{"name":"Washington DC","expenditure":"428","income":"10022"}
+{"name":"West Virginia","expenditure":"320","income":"6456"}
+{"name":"Wisconsin","expenditure":"NA","income":"7597"}
+{"name":"Wyoming","expenditure":"500","income":"9096"}
