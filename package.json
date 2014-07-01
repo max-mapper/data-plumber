@@ -1,31 +1,29 @@
 {
   "name": "data-plumber",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "a nodeschool workshop for learning how to work with data",
   "main": "index.js",
-  "bin": "cli.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "data-plumber": "cli.js"
   },
-  "author": "",
+  "author": "max ogden",
   "license": "BSD",
-  "devDependencies": {
-    "JSONStream": "*",
-    "binary-csv": "*",
-    "csv-join": "*",
-    "gasket": "*",
-    "j": "*",
-    "json": "*",
-    "json-merge": "*",
-    "ldjson-stream": "*",
-    "shapefile": "*",
-    "tar-fs": "*",
-    "trim-object-stream": "*",
-    "xml-json": "*"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "gasket": "^0.3.0",
-    "workshopper": "^1.2.1",
-    "workshopper-exercise": "maxogden/workshopper-exercise#execute-args"
-  }
+    "adventure": "^2.4.0",
+    "ansimd": "0.0.1",
+    "diff": "^1.0.8",
+    "gasket": "^0.4.0",
+    "split": "^0.3.0",
+    "styled": "0.0.1",
+    "tuple-stream": "0.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxogden/data-plumber.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxogden/data-plumber/issues"
+  },
+  "homepage": "https://github.com/maxogden/data-plumber"
 }

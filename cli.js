@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
-var workshopper = require('workshopper')
-var path        = require('path')
+var adventure = require('adventure')
+var shop = adventure('data-plumber')
 
-workshopper({
-  name        : 'data-plumber',
-  title       : 'DATA PLUMBER',
-  exerciseDir : path.join(__dirname, 'exercises'),
-  appDir      : __dirname
+var problems = [ 'Line Delimited JSON' ]
+problems.forEach(function (prob) {
+  shop.add(prob, function () { return require('./problems/' + prob.replace(/\s/ig, '_').toLowerCase()) })
 })
+
+shop.execute(process.argv.slice(2))

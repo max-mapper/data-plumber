@@ -1,0 +1,7 @@
+{
+  "name": "my-module",
+  "version": "0.0.1",
+  "gasket": [
+    "echo hello world"
+  ]
+}
