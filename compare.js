@@ -1,13 +1,17 @@
 var jsDiff = require('diff')
 var split = require('split')
+var os = require('os')
 var child = require('child_process')
 var tuple = require('tuple-stream')
 var through = require('through')
 var styled = require('styled')
 
+var spawn = child.spawn
+if (os.type() === 'Windows_NT') spawn = require('win-spawn')
+
 module.exports = function(cmd1, cmd1args, cmd2, cmd2args, cb) {
-  var a = child.spawn(cmd1, cmd1args, {env: process.env})
-  var b = child.spawn(cmd2, cmd2args, {env: process.env})
+  var a = spawn(cmd1, cmd1args, {env: process.env})
+  var b = spawn(cmd2, cmd2args, {env: process.env})
   var lines = 0
   var linesMatched = 0
   
