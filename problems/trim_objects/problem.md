@@ -11,9 +11,13 @@ When what you really want is:
 
 For trimming LDJSON data on the command line you can use **trim-object-stream**
 
-To install it run **npm install --save trim-object-stream**.
+To install it run **npm install --save trim-object-stream**
 
-Raw CSV data will be piped into your gasket process for this challenge.
+This challenge starts with a CSV file with 2000 lines of property parcel
+ownership public data from the City of Oakland. The data is messy -- it has
+lots of extra unnecessary whitespace.
+
+This raw CSV data will be automatically piped into your gasket process.
 
 **To pass this challenge** create a **package.json** file with a **"gasket"**
 section that first converts the CSV data into LDJSON, and then prints out

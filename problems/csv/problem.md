@@ -14,7 +14,7 @@ to your package.json's dependencies field.
 **Note**: you don't have to use **-g**. gasket is smart enough to find
 commands inside the node_modules directory.
 
-Raw CSV data will be piped into your gasket process for this challenge.
+Raw CSV data will be automatically piped into your gasket process.
 
 **To pass this challenge** create a **package.json** file with a **"gasket"**
 section that first converts the CSV data into LDJSON, and then prints out

@@ -21,7 +21,7 @@ directory.
 section that prints out the **value** of the **name** field of each JSON object
 using the **jku** module. It should print one name per line.
 
-Raw data will be piped into your gasket process for this challenge.
+Raw data will be automatically piped into your gasket process.
 
 Use the command **data-plumber verify package.json** to verify.
 

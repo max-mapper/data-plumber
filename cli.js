@@ -7,8 +7,12 @@ var problems = [
   'Gasket',
   'Line Delimited JSON',
   'CSV',
-  "Trim Objects"
+  "Trim Objects",
+  "JSON Streaming"
 ]
+
+// "Shapefile",
+// "XML"
 
 problems.forEach(function (prob) {
   shop.add(prob, function () { return require('./problems/' + prob.replace(/\s/ig, '_').toLowerCase()) })

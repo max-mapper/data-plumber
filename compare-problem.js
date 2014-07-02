@@ -14,7 +14,7 @@ module.exports = function(root, dataFile) {
   
   var problem = {}
   
-  problem.problem = ansimd(fs.readFileSync(path.join(root, 'problem.md')).toString())
+  problem.problem = ansimd(fs.readFileSync(path.join(root, 'problem.md')).toString()) + '\nRaw data file (for debugging):\n' + dataPath + '\n'
   problem.solution = "Reference solution:\n\n" + fs.readFileSync(path.join(root, 'package.json')).toString() + '\n'
 
   problem.verify = function (args, cb) {

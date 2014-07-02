@@ -11,7 +11,7 @@ module.exports = function(a, b, cb) {
   
   var tupler = tuple(a.stdout.pipe(split()), b.stdout.pipe(split()))
   
-  console.log('Diff of first 20 lines below (', styled('red', 'missing'), styled('green', 'extra'), styled('grey', 'matched'), ')\n')
+  console.log('Diff of first 20 lines below (', styled('red', 'not matched'), ',', styled('green', 'matched'), ')\n')
   
   tupler.pipe(through(function(ch) {
     lines++
@@ -25,8 +25,9 @@ module.exports = function(a, b, cb) {
       var diff = jsDiff.diffChars(ch[1], ch[0])
     
       diff.forEach(function(part){
-        var color = part.added ? 'green' : 
-                    part.removed ? 'red' : 'grey'
+        var color = 'green'
+        if (part.added) color = 'red'
+        if (part.removed) color = 'red'
         process.stdout.write(styled(color, part.value))
       })
 
