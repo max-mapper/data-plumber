@@ -13,18 +13,24 @@ module.exports = function(a, b, cb) {
   
   console.log('Diff of first 20 lines below (', styled('red', 'not matched'), ',', styled('green', 'matched'), ')\n')
   
-  tupler.pipe(through(function(ch) {
+  // bail after 10 seconds
+  var timeout = setTimeout(function() {
+    console.error('ERROR: 10 second timeout. Try "run" instead of "verify"!')
+    differ.end()
+  }, 10000)
+    
+  var differ = through(function(ch) {
     lines++
-    
+  
     if (ch[0] === ch[1]) linesMatched++
-    
+  
     if (lines < cutoff) {
       var diff = jsDiff.diffChars(ch[1], ch[0])
-    
+  
       diff.forEach(function(part){
         var color = 'green'
-        if (part.added) color = 'red'
-        if (part.removed) color = 'red'
+        if (part.added) color = 'redBg white'
+        if (part.removed) color = 'redBg white'
         // var color = 'grey'
         // if (part.added) color = 'green'
         // if (part.removed) color = 'red'
@@ -34,9 +40,12 @@ module.exports = function(a, b, cb) {
       console.log('')
     }
   }, function() {
-    this.queue(null)
+    differ.queue(null)
+    clearTimeout(timeout)
     if (lines === linesMatched) return cb(true)
     console.log('\nOnly', linesMatched, 'of', lines, 'lines matched.\n')
     cb(false)
-  }))
+  })
+  
+  tupler.pipe(differ)
 }
