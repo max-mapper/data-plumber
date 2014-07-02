@@ -5,7 +5,9 @@ var shop = adventure('data-plumber')
 
 var problems = [
   'Gasket',
-  'Line Delimited JSON'
+  'Line Delimited JSON',
+  'CSV',
+  "Trim Objects"
 ]
 
 problems.forEach(function (prob) {

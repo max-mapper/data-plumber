@@ -1,15 +1,32 @@
 var fs = require('fs')
+var os = require('os')
 var path = require('path')
+var child = require('child_process')
 var ansimd = require('ansimd')
 var compare = require('../../compare.js')
 
+var spawn = child.spawn
+if (os.type() === 'Windows_NT') spawn = require('win-spawn')
+
+var gasketCmd = path.resolve(__dirname, '..', '..', 'node_modules', 'gasket', 'bin.js')
+
 exports.problem = ansimd(fs.readFileSync(path.join(__dirname, 'problem.md')).toString())
+exports.solution = "Reference solution:\n\n" + fs.readFileSync(path.join(__dirname, 'package.json')).toString() + '\n'
 
 exports.verify = function (args, cb) {
-  var gasketCmd = path.resolve(__dirname, '..', '..', 'node_modules', 'gasket', 'bin.js')
-  var cmd1 = gasketCmd
-  var cmd1Args = ['--config', path.resolve(args[0])]
-  var cmd2 = gasketCmd
-  var cmd2Args = ['--config', path.resolve(__dirname, 'package.json')]
-  compare(cmd1, cmd1Args, cmd2, cmd2Args, cb)
+  var entry = spawnEntry(args)
+  var solution = spawnSolution()
+  compare(entry, solution, cb)
+}
+
+function spawnEntry(args) {
+  var entryCmd = gasketCmd
+  var entryArgs = ['--config', path.resolve(args[0])]
+  return spawn(entryCmd, entryArgs, {env: process.env})
+}
+
+function spawnSolution() {
+  var solutionCmd = gasketCmd
+  var solutionArgs = ['--config', path.resolve(__dirname, 'package.json')]
+  return spawn(solutionCmd, solutionArgs, {env: process.env})
 }

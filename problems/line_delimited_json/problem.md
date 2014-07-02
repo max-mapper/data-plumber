@@ -13,16 +13,18 @@ The **jku** command line module is really handy for processing LDJSON data.
 Read about how it works at: npmjs.org/jku
 
 To install it run **npm install --save jku**. This will add jku to your
-package.json's dependencies field. **Note**: you don't have to use **-g**
-anymore. gasket is smart enough to find commands inside the node_modules
+package.json's dependencies field. **Note**: you don't have to use **-g**.
+gasket is smart enough to find commands inside the node_modules
 directory.
 
-**Hint**: use the 'transform' option of jku for this challenge
+**To pass this challenge** create a **package.json** file with a **"gasket"**
+section that prints out the **value** of the **name** field of each JSON object
+using the **jku** module. It should print one name per line.
+
+Raw data will be piped into your gasket process for this challenge.
 
 Use the command **data-plumber verify package.json** to verify.
 
-**To pass this challenge** create a **package.json** file with a **"gasket"**
-section that prints out the **value** of the **"name"** of each JSON object
-using the **jku** module. It should print one name per line.
+Use the command **data-plumber run package.json** to see the raw gasket output.
 
-Data will be piped into your gasket process for this challenge.
+**Hint**: use the 'transform' option of jku

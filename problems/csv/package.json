@@ -2,9 +2,11 @@
   "name": "my-module",
   "version": "0.0.1",
   "gasket": [
+    "csv-parser",
     "jku -t _.name"
   ],
   "dependencies": {
+    "csv-parser": "^1.4.1",
     "jku": "0.0.2"
   }
 }

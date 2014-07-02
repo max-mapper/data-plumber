@@ -1,17 +1,10 @@
 var jsDiff = require('diff')
 var split = require('split')
-var os = require('os')
-var child = require('child_process')
 var tuple = require('tuple-stream')
 var through = require('through')
 var styled = require('styled')
 
-var spawn = child.spawn
-if (os.type() === 'Windows_NT') spawn = require('win-spawn')
-
-module.exports = function(cmd1, cmd1args, cmd2, cmd2args, cb) {
-  var a = spawn(cmd1, cmd1args, {env: process.env})
-  var b = spawn(cmd2, cmd2args, {env: process.env})
+module.exports = function(a, b, cb) {
   var cutoff = 20
   var lines = 0
   var linesMatched = 0
@@ -45,6 +38,4 @@ module.exports = function(cmd1, cmd1args, cmd2, cmd2args, cb) {
     console.log('\nOnly', linesMatched, 'of', lines, 'lines matched.\n')
     cb(false)
   }))
-  
-  return {a: a, b: b}
 }

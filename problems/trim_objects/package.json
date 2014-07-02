@@ -1,0 +1,14 @@
+{
+  "name": "my-module",
+  "version": "0.0.1",
+  "gasket": [
+    "csv-parser",
+    "trim-object-stream",
+    "jku -t \"_['Owner name']\""
+  ],
+  "dependencies": {
+    "csv-parser": "^1.4.1",
+    "jku": "0.0.2",
+    "trim-object-stream": "^1.0.0"
+  }
+}
