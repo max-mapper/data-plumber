@@ -2,12 +2,9 @@
   "name": "my-module",
   "version": "0.0.1",
   "gasket": [
-    "JSONStream 'rows.*.doc'",
-    "jku -t _.song"
+    "jsonfilter rows.*.doc.song"
   ],
   "dependencies": {
-    "csv-parser": "^1.4.1",
-    "jku": "0.0.2",
-    "trim-object-stream": "^1.0.0"
+    "jsonfilter": "^1.0.1"
   }
 }

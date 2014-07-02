@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "gasket": [
     "csv-parser",
-    "jku -t _.name"
+    "jsonfilter name"
   ],
   "dependencies": {
     "csv-parser": "^1.4.1",
-    "jku": "0.0.2"
+    "jsonfilter": "^1.0.0"
   }
 }

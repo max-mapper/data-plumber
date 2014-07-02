@@ -2,9 +2,9 @@
   "name": "my-module",
   "version": "0.0.1",
   "gasket": [
-    "jku -t _.name"
+    "jsonfilter name"
   ],
   "dependencies": {
-    "jku": "0.0.2"
+    "jsonfilter": "^1.0.1"
   }
 }

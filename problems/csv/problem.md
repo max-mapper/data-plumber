@@ -24,4 +24,4 @@ Use the command **data-plumber verify package.json** to verify.
 
 Use the command **data-plumber run package.json** to see the raw gasket output.
 
-**Hint**: use the jku again for this challenge in addition to csv-parser
+**Hint**: use jsonfilter again for this challenge in addition to csv-parser

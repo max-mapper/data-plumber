@@ -16,9 +16,6 @@ module.exports = function(a, b, cb) {
   tupler.pipe(through(function(ch) {
     lines++
     
-    ch[0] = JSON.stringify(ch[0] || '')
-    ch[1] = JSON.stringify(ch[1] || '')
-    
     if (ch[0] === ch[1]) linesMatched++
     
     if (lines < cutoff) {
@@ -28,6 +25,9 @@ module.exports = function(a, b, cb) {
         var color = 'green'
         if (part.added) color = 'red'
         if (part.removed) color = 'red'
+        // var color = 'grey'
+        // if (part.added) color = 'green'
+        // if (part.removed) color = 'red'
         process.stdout.write(styled(color, part.value))
       })
 

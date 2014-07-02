@@ -3,12 +3,12 @@
 Sometimes you have tons of non-newline delimited JSON data that you can't
 read into memory all at once (e.g. JSON.parse() causes JS to crash!).
 
-For this use case check out the **JSONStream** module (case sensitive!)
+The **jsonfilter** module can be used in this situation as well
 
-To install it run **npm install --save JSONStream**
+Read how it works at **npmjs.org/jsonfilter**
 
-This challenge involves JSON data for a music collection. The data is
-structured like this:
+This challenge involves filtering JSON data from a music collection.
+The data is structured like this:
 
 ```
 {"rows": [
@@ -28,10 +28,8 @@ This raw JSON data will be automatically piped into your gasket process.
 
 **To pass this challenge** create a **package.json** file with a **"gasket"**
 section that parses the **doc** objects out of the input JSON stream and prints
-out the **song** name for each one.
+the **song** property from each one
 
 Use the command **data-plumber verify package.json** to verify.
 
 Use the command **data-plumber run package.json** to see the raw gasket output.
-
-**Hint**: use jku again for this challenge

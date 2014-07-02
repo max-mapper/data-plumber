@@ -4,11 +4,11 @@
   "gasket": [
     "csv-parser",
     "trim-object-stream",
-    "jku -t \"_['Owner name']\""
+    "jsonfilter \"Owner name\""
   ],
   "dependencies": {
     "csv-parser": "^1.4.1",
-    "jku": "0.0.2",
+    "jsonfilter": "^1.0.1",
     "trim-object-stream": "^1.0.0"
   }
 }
