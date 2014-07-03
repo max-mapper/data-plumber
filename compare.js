@@ -13,12 +13,12 @@ module.exports = function(a, b, cb) {
   
   console.log('Diff of first 20 lines below (', styled('red', 'not matched'), ',', styled('green', 'matched'), ')\n')
   
-  // bail after 10 seconds
+  // bail after 20 seconds
   var timeout = setTimeout(function() {
-    console.error('ERROR: 10 second timeout. Try "run" instead of "verify"!')
+    console.error('ERROR: 20 second timeout. Try "run" instead of "verify"!')
     differ.end()
     process.exit(1)
-  }, 10000)
+  }, 20000)
     
   var differ = through(function(ch) {
     lines++
