@@ -28,7 +28,7 @@ module.exports = function(root, dataFile) {
 
   problem.run = function(args) {
     var entry = spawnEntry(args)
-    console.error('cat', dataPath, '|', 'gasket', '--config', path.resolve(args[0]))
+    console.error('cat', dataPath, '|', 'gasket', 'run', '--config', path.resolve(args[0]))
     entry.stdout.pipe(process.stdout)
     entry.stderr.pipe(process.stderr)
     var input = fs.createReadStream(dataPath)
@@ -39,13 +39,13 @@ module.exports = function(root, dataFile) {
 
   function spawnEntry(args) {
     var entryCmd = gasketCmd
-    var entryArgs = ['--config', path.resolve(args[0])]
+    var entryArgs = ['run', '--config', path.resolve(args[0])]
     return spawn(entryCmd, entryArgs, {env: process.env})
   }
 
   function spawnSolution() {
     var solutionCmd = gasketCmd
-    var solutionArgs = ['--config', path.resolve(root, 'package.json')]
+    var solutionArgs = ['run', '--config', path.resolve(root, 'package.json')]
     return spawn(solutionCmd, solutionArgs, {env: process.env})
   }
 }
