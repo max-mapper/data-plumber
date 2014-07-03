@@ -1,6 +1,6 @@
 {
   "name": "data-plumber",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "a nodeschool workshop for learning how to work with data",
   "main": "index.js",
   "bin": {
@@ -15,7 +15,7 @@
     "csv-parser": "^1.4.1",
     "diff": "^1.0.8",
     "excel-stream": "^1.0.1",
-    "gasket": "^0.5.0",
+    "gasket": "^0.6.0",
     "jsonfilter": "^1.0.1",
     "split": "^0.3.0",
     "styled": "0.0.1",
