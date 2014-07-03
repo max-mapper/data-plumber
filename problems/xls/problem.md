@@ -19,3 +19,5 @@ field of each item in the data and prints them one per line.
 Use the command **data-plumber verify package.json** to verify.
 
 Use the command **data-plumber run package.json** to see the raw gasket output.
+
+**HINT:** make sure to use the newline delimited JSON mode of excel-stream

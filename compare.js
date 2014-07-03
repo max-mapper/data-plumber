@@ -17,6 +17,7 @@ module.exports = function(a, b, cb) {
   var timeout = setTimeout(function() {
     console.error('ERROR: 10 second timeout. Try "run" instead of "verify"!')
     differ.end()
+    process.exit(1)
   }, 10000)
     
   var differ = through(function(ch) {
@@ -29,8 +30,8 @@ module.exports = function(a, b, cb) {
   
       diff.forEach(function(part){
         var color = 'green'
-        if (part.added) color = 'redBg white'
-        if (part.removed) color = 'redBg white'
+        if (part.added) color = 'brightRedBg white'
+        if (part.removed) color = 'brightRedBg white'
         // var color = 'grey'
         // if (part.added) color = 'green'
         // if (part.removed) color = 'red'
