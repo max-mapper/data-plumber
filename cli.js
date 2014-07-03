@@ -10,7 +10,8 @@ var problems = [
   'CSV',
   "Trim Objects",
   "JSON Streaming",
-  "XML"
+  "XML",
+  "XLS"
 ]
 
 // modules to consider using
