@@ -23,10 +23,15 @@ to your gasket pipeline. You should end up with something similar to:
 }
 ```
 
-Now run **echo "hello" | gasket** in the same folder as the above **package.json**
-file. It should print out **HELLO**!
+Now run **echo "hello" | gasket** in the same folder as the above
+**package.json** file. It should print out **HELLO**!
 
-**To pass this challenge** create a **package.json** file with a **"gasket"**
-section that uppercases all input
+This is the same as running **echo "hello" | node_modules/.bin/transform-uppercase**
+directly. All of the workshops can be run similarly this way, by piping data
+from one command to the other, but 'gasket' will be helping us combine complex
+examples together.
+
+**To pass this challenge** create a **package.json** file with a **"gasket"** section that
+**uppercases all input**.
 
 Use the command **data-plumber verify package.json** to verify.
