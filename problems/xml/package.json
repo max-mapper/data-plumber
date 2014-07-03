@@ -1,0 +1,12 @@
+{
+  "name": "my-module",
+  "version": "0.0.1",
+  "gasket": [
+    "xml-json",
+    "jsonfilter body.vehicle.*.$.id"
+  ],
+  "dependencies": {
+    "xml-json": "^1.0.0",
+    "jsonfilter": "^1.0.1"
+  }
+}
