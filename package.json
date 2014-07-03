@@ -15,7 +15,7 @@
     "csv-parser": "^1.4.1",
     "diff": "^1.0.8",
     "excel-stream": "^1.0.2",
-    "gasket": "^1.0.0",
+    "gasket": "^1.1.2",
     "jsonfilter": "^1.0.1",
     "split": "^0.3.0",
     "styled": "0.0.1",
@@ -23,7 +23,8 @@
     "transform-uppercase": "^1.0.0",
     "trim-object-stream": "^1.0.0",
     "tuple-stream": "0.0.2",
-    "win-spawn": "^2.0.0"
+    "win-spawn": "^2.0.0",
+    "xml-json": "^1.0.0"
   },
   "repository": {
     "type": "git",
