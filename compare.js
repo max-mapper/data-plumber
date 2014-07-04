@@ -18,7 +18,7 @@ module.exports = function(a, b, cb) {
     console.error('ERROR: 20 second timeout. Try "run" instead of "verify"!')
     lines++
     process.exit(0)
-  }, 2000)
+  }, 20000)
     
   var differ = through(function(ch) {
     lines++
