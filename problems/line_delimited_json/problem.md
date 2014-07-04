@@ -26,6 +26,6 @@ module. It should print one name per line.
 
 Raw data will be automatically piped into your gasket process.
 
-Use the command **data-plumber verify package.json** to verify.
-
 Use the command **data-plumber run package.json** to see the raw gasket output.
+
+Use the command **data-plumber verify package.json** to verify.
