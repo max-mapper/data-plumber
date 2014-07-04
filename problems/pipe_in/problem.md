@@ -23,7 +23,7 @@ to your gasket pipeline. You should end up with something similar to:
 }
 ```
 
-Now run **echo "hello" | gasket** in the same folder as the above
+Now run **echo "hello" | gasket run** in the same folder as the above
 **package.json** file. It should print out **HELLO**!
 
 This is the same as running **echo "hello" | node_modules/.bin/transform-uppercase**

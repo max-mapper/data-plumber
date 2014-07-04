@@ -13,20 +13,27 @@ var gasketCmd = path.resolve(__dirname, '..', '..', 'node_modules', 'gasket', 'b
 exports.problem = ansimd(fs.readFileSync(path.join(__dirname, 'problem.md')).toString())
 exports.solution = "Reference solution:\n\n" + fs.readFileSync(path.join(__dirname, 'package.json')).toString() + '\n'
 
-exports.verify = function (args, cb) {
+exports.verify = function(args, cb) {
   var entry = spawnEntry(args)
   var solution = spawnSolution()
   compare(entry, solution, cb)
 }
 
+exports.run = function(args) {
+  var entry = spawnEntry(args)
+  console.error('gasket', 'run', '--config', path.resolve(args[0]))
+  entry.stdout.pipe(process.stdout)
+  entry.stderr.pipe(process.stderr)
+}
+
 function spawnEntry(args) {
   var entryCmd = gasketCmd
-  var entryArgs = ['--config', path.resolve(args[0])]
+  var entryArgs = ['run', '--config', path.resolve(args[0])]
   return spawn(entryCmd, entryArgs, {env: process.env})
 }
 
 function spawnSolution() {
   var solutionCmd = gasketCmd
-  var solutionArgs = ['--config', path.resolve(__dirname, 'package.json')]
+  var solutionArgs = ['run', '--config', path.resolve(__dirname, 'package.json')]
   return spawn(solutionCmd, solutionArgs, {env: process.env})
 }

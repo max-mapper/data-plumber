@@ -27,7 +27,7 @@ gasket commands go in a **package.json** file under the **"gasket"** key, e.g.:
 }
 ```
 
-If you run **gasket** in the same folder as the above **package.json** file it
+If you run **gasket run** in the same folder as the above **package.json** file it
 should simply print out **hi** to the console.
 
 **To pass this challenge:**
