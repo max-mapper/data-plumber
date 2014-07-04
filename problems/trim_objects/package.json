@@ -3,12 +3,10 @@
   "version": "0.0.1",
   "gasket": [
     "csv-parser",
-    "trim-object-stream",
-    "jsonfilter \"Owner name\""
+    "trim-object-stream"
   ],
   "dependencies": {
     "csv-parser": "^1.4.1",
-    "jsonfilter": "^1.0.1",
     "trim-object-stream": "^1.0.0"
   }
 }

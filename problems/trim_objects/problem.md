@@ -22,8 +22,8 @@ This raw CSV data will be automatically piped into your gasket process.
 **To pass this challenge:**
 
 Create a **package.json** file with a **"gasket"** section that first converts
-the CSV data into LDJSON, and then prints out the **"Owner name"** property of
-each JSON object with the keys and values trimmed.
+the CSV data into LDJSON, and then prints out each JSON object, one per line,
+with the keys and values trimmed.
 
 Use the command **data-plumber verify package.json** to verify.
 
