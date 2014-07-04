@@ -1,6 +1,6 @@
 {
   "name": "data-plumber",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "a nodeschool workshop for learning how to work with data",
   "main": "index.js",
   "bin": {
