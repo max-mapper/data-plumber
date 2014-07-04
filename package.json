@@ -14,7 +14,6 @@
     "ansimd": "0.0.1",
     "csv-parser": "^1.4.1",
     "diff": "^1.0.8",
-    "excel-stream": "^1.0.2",
     "gasket": "^1.1.2",
     "jsonfilter": "^1.0.1",
     "split": "^0.3.0",
