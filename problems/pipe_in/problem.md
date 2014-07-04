@@ -31,7 +31,8 @@ directly. All of the workshops can be run similarly this way, by piping data
 from one command to the other, but 'gasket' will be helping us combine complex
 examples together.
 
-**To pass this challenge** create a **package.json** file with a **"gasket"** section that
-**uppercases all input**.
+**To pass this challenge:**
+
+Create a **package.json** file with a **"gasket"** section that **uppercases all input**.
 
 Use the command **data-plumber verify package.json** to verify.

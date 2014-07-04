@@ -6,7 +6,7 @@ CSV is a streaming friendly format.
 The **csv-parser** command line module is great at this, and by default will
 convert CSV data into LDJSON.
 
-Read about how it works at: npmjs.org/csv-parser
+Read about how it works at: **npmjs.org/csv-parser**.
 
 To install it run **npm install --save csv-parser**. This will add csv-parser
 to your package.json's dependencies field.
@@ -16,9 +16,11 @@ commands inside the node_modules directory.
 
 Raw CSV data will be automatically piped into your gasket process.
 
-**To pass this challenge** create a **package.json** file with a **"gasket"**
-section that first converts the CSV data into LDJSON, and then prints out
-the **name** property of each JSON object
+**To pass this challenge:**
+
+Create a **package.json** file with a **"gasket"** section that first converts
+the CSV data into LDJSON, and then prints out the **name** property of each
+JSON object
 
 Use the command **data-plumber verify package.json** to verify.
 

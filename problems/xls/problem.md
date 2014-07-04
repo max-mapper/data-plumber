@@ -12,9 +12,11 @@ Check out the **excel-stream** readme for usage details: npmjs.org/excel-stream
 An XLS file containing 311 complaints from the City of Oakland will get piped
 into your gasket pipeline.
 
-**To pass this challenge** create a **package.json** file with a **"gasket"**
-section that converts the XLS to JSON and then filters out the **DESCRIPTION**
-field of each item in the data and prints them one per line.
+**To pass this challenge:**
+
+Create a **package.json** file with a **"gasket"** section that converts the
+XLS to JSON and then filters out the **DESCRIPTION** field of each item in the
+data and prints them one per line.
 
 Use the command **data-plumber verify package.json** to verify.
 
