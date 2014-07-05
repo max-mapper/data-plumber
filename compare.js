@@ -10,7 +10,7 @@ module.exports = function(a, b, cb) {
   var linesMatched = 0
   
   var tupler = tuple(a.stdout.pipe(split()), b.stdout.pipe(split()))
-  
+
   console.log('Diff of first 20 lines below (', styled('red', 'not matched'), ',', styled('green', 'matched'), ')\n')
   
   // bail after 20 seconds

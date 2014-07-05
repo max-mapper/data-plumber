@@ -23,6 +23,10 @@ module.exports = function(root, dataFile) {
     var input = fs.createReadStream(dataPath)
     input.pipe(entry.stdin)
     input.pipe(solution.stdin)
+    
+    entry.stderr.pipe(process.stderr)
+    solution.stderr.pipe(process.stderr)
+    
     compare(entry, solution, cb)
   }
 
