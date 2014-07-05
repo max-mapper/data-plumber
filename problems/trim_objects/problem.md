@@ -28,5 +28,3 @@ with the keys and values trimmed.
 Use the command **data-plumber verify package.json** to verify.
 
 Use the command **data-plumber run package.json** to see the raw gasket output.
-
-**Hint**: use the jsonfilter again for this challenge in addition to csv-parser
