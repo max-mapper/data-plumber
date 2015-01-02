@@ -13,7 +13,7 @@ be piped into your gasket pipeline.
 **To pass this challenge:**
 
 Create a **package.json** file with a **"gasket"** section that converts the
-XML to JSON and then filters out the **id** field of each item in the data and
+XML to JSON while filtering by **vehicle**, and then filters out the **id** field of each item in the data and
 prints them one per line.
 
 Use the command **data-plumber verify package.json** to verify.
