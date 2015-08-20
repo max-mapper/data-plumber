@@ -24,7 +24,7 @@
     "trim-object-stream": "^1.0.0",
     "tuple-stream": "0.0.2",
     "win-spawn": "^2.0.0",
-    "xml-json": "^1.0.0"
+    "xml-json": "^2.0.2"
   },
   "repository": {
     "type": "git",

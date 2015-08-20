@@ -2,11 +2,11 @@
   "name": "my-module",
   "version": "0.0.1",
   "gasket": [
-    "xml-json",
-    "jsonfilter body.vehicle.*.$.id"
+    "xml-json vehicle",
+    "jsonfilter id"
   ],
   "dependencies": {
-    "xml-json": "^1.0.0",
+    "xml-json": "^2.0.2",
     "jsonfilter": "^1.0.1"
   }
 }
